@@ -1,0 +1,90 @@
+/* Zoom 125 */
+.navbar {
+  z-index: 1;
+  background-color: transparent;
+  color: black;
+  letter-spacing: 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5% 4%;
+  position: fixed;
+}
+
+.responsive {
+  visibility: hidden;
+}
+
+.navbar-sections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  width: 50px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px 0;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #a89cc8;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .navbar{
+    background-color: #a89cc8;
+  }
+
+  .navbar-sections {
+    z-index: 1;
+    background-color: #a89cc8;
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .navbar-sections button {
+    padding-bottom: 20px;
+  }
+
+  .navbar-sections.open {
+    max-height: 310px;
+  }
+
+  .responsive {
+    visibility: inherit;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

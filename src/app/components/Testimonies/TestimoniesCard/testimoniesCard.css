@@ -1,0 +1,72 @@
+.testimonies-card {
+  background-color: #24272C;
+  color: #fff;
+  border-radius: 15px;
+  padding: 60px 20px 20px;
+  width: 320px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bkg-main {
+    background-color: #161617;
+}
+
+.bkg-secondary {
+    background-color: #282828;
+}
+
+.testimonies-card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #282828;
+  background-color: #282828;
+}
+
+.testimonies-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonies-card-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.testimonies-card-description {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+}
+
+.testimonies-card-tesimony {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.stars span {
+  color: #6a5acd;
+  font-size: 1.2rem;
+}
+
+
+@media (max-width: 480px) {
+  .testimonies-card {
+    width: 280px;
+  }
+}

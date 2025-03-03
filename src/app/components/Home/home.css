@@ -1,0 +1,269 @@
+.home-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.left-section {
+  width: 50%;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.right-section {
+  width: 50%;
+  background-color: #6a5acd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dancer-img {
+  position: absolute;
+  right: 20%;
+  top: 15%;
+  height: 55%;
+  width: 60%;
+}
+
+.dancer-shade-img {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  width: 60%;
+  height: 60%;
+}
+
+.left-section-title {
+  font-size: 6rem;
+  position: absolute;
+  top: 20%;
+  right: 50%;
+}
+
+.vertical-text {
+  position: absolute;
+  left: 5%;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.social-icons {
+  z-index: 1;
+  position: absolute;
+  bottom: 1%;
+  left: 8%;
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 3px;
+}
+
+.social-icon-instagram:hover {
+  color: #da33f0;
+  transition: color 0.3s;
+}
+
+.social-icon-behance:hover {
+  color: #1769ff;
+  transition: color 0.3s;
+}
+
+.right-section-title {
+  z-index: 1;
+  color: var(--text-light);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-size: 6rem;
+  position: absolute;
+  /* top: 40%;
+  right: 10%; */
+  top: 42%;
+  right: 35%;
+  transform: translate(50%, -50%);
+}
+
+.subtitle {
+  color: var(--text-light);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  position: absolute;
+  top: 46%;
+  right: 12%;
+  font-size: 1.2rem;
+}
+
+/* .thumbnails {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+} */
+
+@media (max-width: 480px) {
+  .home-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .left-section {
+    width: 50%;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  .right-section {
+    width: 50%;
+    background-color: #6a5acd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dancer-img {
+    /* display: none; */
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    width: 90%;
+    height: 35%;
+  }
+
+  .dancer-shade-img {
+    /* display: none; */
+    position: absolute;
+    right: 0%;
+    top: 58%;
+    width: 90%;
+    height: 35%;
+  }
+
+  .left-section-title {
+    font-size: 2.1rem;
+    position: absolute;
+    top: 20%;
+    right: 52%;
+  }
+
+  .vertical-text {
+    /* display: none; */
+    position: absolute;
+    left: 5%;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-top: 2rem;
+    font-size: 0.6rem;
+  }
+
+  .social-icons {
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: 1%;
+    left: 8%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .right-section-title {
+    z-index: 0;
+    color: var(--text-light);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    font-size: 2rem;
+    position: absolute;
+    top: 29%;
+    right: 35%;
+    transform: translate(50%, -50%);
+  }
+
+  .subtitle {
+    color: var(--text-light);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 32%;
+    right: 5%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 991.98px) and (orientation: portrait) {
+  .dancer-img {
+    right: 5%;
+    top: 35%;
+    height: 40%;
+    width: 80%;
+  }
+
+  .dancer-shade-img {
+    right: 5%;
+    top: 58%;
+    width: 65%;
+    height: 45%;
+  }
+
+  .left-section-title {
+    font-size: 3rem;
+    position: absolute;
+    top: 22%;
+    right: 52%;
+  }
+
+  .vertical-text {
+    font-size: 0.8rem;
+  }
+
+  .social-icons {
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: 1%;
+    left: 8%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .right-section-title {
+    font-size: 3rem;
+    position: absolute;
+    top: 31%;
+    right: 35%;
+    transform: translate(50%, -50%);
+  }
+
+  .subtitle {
+    top: 33%;
+    right: 5%;
+  }
+}

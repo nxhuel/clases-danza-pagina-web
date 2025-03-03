@@ -3,8 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-light: #e1e1e1;
+  --bg-dark: #282828;
+  --text-light: #282828;
+  --text-dark: #e1e1e1;
+
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
