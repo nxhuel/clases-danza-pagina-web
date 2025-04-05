@@ -102,7 +102,7 @@ export const Contact = () => {
                   required
                 />
               </div>
-              <div class="form-email">
+              <div className="form-email">
                 <input
                   id="email"
                   type="email"
@@ -111,7 +111,7 @@ export const Contact = () => {
                   required
                 />
               </div>
-              <div class="form-message">
+              <div className="form-message">
                 <textarea
                   id="message"
                   name="message"
@@ -119,7 +119,7 @@ export const Contact = () => {
                   required
                 ></textarea>
               </div>
-              <div class="form-send">
+              <div className="form-send">
                 <input type="submit" value="ENVIAR" />
               </div>
 

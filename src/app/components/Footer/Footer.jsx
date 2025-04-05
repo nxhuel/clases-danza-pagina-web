@@ -3,10 +3,10 @@ import "../Footer/footer.css";
 export const Footer = () => {
   return (
     <>
-      <footer class="footer">
-        <div class="footer-content">
+      <footer className="footer">
+        <div className="footer-content">
           <p>&copy; 2025 Alma En Movimiento. Todos los derechos reservados.</p>
-          <div class="footer-links">
+          <div className="footer-links">
             <a href="https://www.behance.net/antonellatisera?fbclid=PAZXh0bgNhZW0CMTEAAaYbuSVsSiMdW8bUWpydpkDnciLSsFhNBCoY0t22Qadpek0y8CGH6-9nn5k_aem_euc-63HZLodgQPfd6CJNuw" target="_blank" >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
