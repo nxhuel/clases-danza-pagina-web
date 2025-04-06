@@ -1,10 +1,9 @@
 'use client';
+import Image from "next/image";
 import "../Home/home.css";
 
 export const Home = () => {
   const bkgImg = "../../../assets/bkg-home.png";
-  const bkgImgShade = "../../../assets/bkg-home-shade.png";
-
 
   return (
     <>
@@ -65,12 +64,17 @@ export const Home = () => {
             src={bkgImg}
             alt="Bailarina en movimiento"
             className="dancer-img"
+            loading="lazy"
           />
-          <img
-            src={bkgImgShade}
+          <Image
+            src="/assets/bkg-home-shade.png"
             alt="Logo sombra"
             className="dancer-shade-img"
+            width={288}
+            height={230}
+            priority
           />
+
         </div>
       </div>
     </>

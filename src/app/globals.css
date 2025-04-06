@@ -7,6 +7,7 @@
   --bg-dark: #282828;
   --text-light: #282828;
   --text-dark: #e1e1e1;
+  --font-family: var(--font-poppins);
 
   transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -37,5 +38,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family), sans-serif;
 }

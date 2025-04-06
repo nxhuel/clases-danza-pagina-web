@@ -12,7 +12,7 @@ export const ClassesCard = ({ image, title, items = [] }) => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.3 }}
     >
-      <img src={image} alt={title} className="card-img w-full h-48 object-cover" />
+      <img src={image} alt={title} className="card-img w-full h-48 object-cover" loading="lazy"/>
       <h2 className="card-title text-lg font-semibold text-white mt-4">{title}</h2>
       <ul className="card-list text-gray-300">
         {items.slice(0, 3).map((item, index) => (

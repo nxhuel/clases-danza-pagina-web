@@ -28,7 +28,7 @@ export const Classes = () => {
                 ]}
               />
               <ClassesCard
-                image={"../../../assets/clase-prueba-tres.jpeg"}
+                image={"../../../assets/clase-prueba-tres.jpg"}
                 title={"Intensivo de verano"}
                 items={[
                   "Danza clasica",
