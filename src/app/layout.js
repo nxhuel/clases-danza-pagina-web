@@ -54,9 +54,8 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <link
-          rel="preload"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=optional"
-          as="style"
+          rel="stylesheet"
         />
       </head>
 
